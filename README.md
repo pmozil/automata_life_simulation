@@ -29,3 +29,26 @@ The concrete transitions are as such:
 
 Here's the diagram:
 ![](diagram.png)
+
+
+# Running the simulation
+Here's an example of usin this:
+```python
+from src.automata import EventQueue, PersonState, PersonStateEnum
+
+# Init a person
+person = PersonState(EventQueue(), PersonStateEnum.REST)
+
+for day in range(30):
+    print(f"Started day {day + 1}")
+    for hour in range(24):
+        print(f"Day {day + 1}, Hour {hour}:")
+        _ = person.next_state(hour)
+```
+
+And to run it, do
+```bash
+git clone https://github.com/pmozil/automata_life_simulation
+cd automata_life_simulation
+python3 -m src
+```

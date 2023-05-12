@@ -20,6 +20,7 @@ Each type of action takes a finite random amount time in a predefined range, dif
 After finishing the action, the person moves on to the next one in the queue, and concrete transitions
 are implemented by simply pushing the action to the front of the queue before the dequeing takes placeo.
 
+## The random event is pushed every hour
 
 The concrete transitions are as such:
 - work -> rest

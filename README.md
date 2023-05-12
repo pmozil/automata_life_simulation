@@ -5,6 +5,8 @@ This is a lab work on automata theory, specifically finite state machines.
 There is nothing special about this, FSMs are really easy if you do them without major mistakes.
 
 
+# Project Structure
+
 The states are as such:
 - commute
 - work
